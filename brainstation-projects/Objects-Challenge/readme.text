@@ -1,0 +1,99 @@
+Learning Objectives
+
+	Practice creating objects
+	Using constructor functions for scalability
+	Explore different methods for creating objects
+	Using object methods to perform tasks
+ 
+Instructions
+
+
+Provide a simple way for someone to create Car objects.
+
+		-create a function that allows you to create an object
+
+
+Provide a simple way for a car factory to be made.
+
+
+Cars require you to store the make, model, and color.
+
+		create an object
+
+Car factories require you to have the brand (make), model (each factory only creates one model), color (only one color for a factory), and the number of cars it needs to manufacture.
+
+
+Each car factory has a method called manufacture which creates all the required car objects and stores them in an array in the factory.
+
+
+NOTE: You should only require two objects. A car factory and a car object. Those two objects will share one property. Ask questions if needed!
+
+
+
+
+what a object constructor is
+what the prototype does 
+
+
+Learning Objectives
+
+			Using objects
+			Different syntax for creating objects
+			Dynamically creating objects and properties
+			Constructor functions
+			Why we should use objects
+			Methods
+
+
+
+
+
+
+			
+//Provide a simple way for someone to create Car objects.
+			
+
+function Car(make, model, carcolor){
+
+	this.make = make;
+	this.model = model;
+	this.carcolor = carcolor;
+	
+
+	
+};
+
+var car1 = new Car("honda", "farts");
+
+var carStorage = [Car, carFactory];
+
+//Provide a simple way for a car factory to be made.
+		
+
+function carFactory(brand, numberOfCars){
+
+	var _this = this;
+	this.brand = brand;
+	this.model = "TT";
+	this.carcolor = 'red';
+	this.numberOfCars = numberOfCars;
+	carsAvailable = [];
+	this.manufacture = function manufacture(){
+
+		for (var i = 0; i < _this.numberOfCars; i++) {
+
+
+			var currentCar = new Car(_this.make, _this.model, _this.carcolor);
+
+			_this.carsAvailable.push(currentCar);
+			console.log(i);
+		}
+	};
+	
+};
+
+var array = new Array();
+
+var carStorage = [Car, carFactory];
+
+console.log(carFactory);

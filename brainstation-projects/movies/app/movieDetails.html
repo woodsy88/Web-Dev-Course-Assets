@@ -1,0 +1,45 @@
+<div id="movie-details">
+  <h1 class="text-center">{{ctrl.movie.Title}}</h1>
+  <div class="row">
+    <div class="col-xs-5">
+      <img class="movie-poster" ng-src="{{ctrl.movie.Poster}}">
+    </div>
+    <div class="col-xs-7">
+      <table class="table">
+        <tr>
+          <td><strong>Plot</strong></td>
+          <td>{{ctrl.movie.Plot}}</td>
+        </tr>
+        <tr>
+          <td><strong>Rated</strong></td>
+          <td>{{ctrl.movie.Rated}}</td>
+        </tr>
+        <tr>
+          <td><strong>Released</strong></td>
+          <td>{{ctrl.movie.Released}}</td>
+        </tr>
+        <tr>
+          <td><strong>Runtime</strong></td>
+          <td>{{ctrl.movie.Runtime}}</td>
+        </tr>
+        <tr>
+          <td><strong>Genre</strong></td>
+          <td>{{ctrl.movie.Genre}}</td>
+        </tr>
+        <tr>
+          <td><strong>Actors</strong></td>
+          <td>{{ctrl.movie.Actors}}</td>
+        </tr>
+        <tr>
+          <td><strong>IMDB Rating</strong></td>
+          <td>{{ctrl.movie.imdbRating}}</td>
+        </tr>
+      </table>
+    </div>    
+  </div>
+  <div class="row">
+    <div class=buttons>
+      <a href="#/home" class="btn btn-primary">Back</a>
+    </div>
+  </div>
+</div>
